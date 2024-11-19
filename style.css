@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --border-radius: 1rem;
+  --card-bg: white;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --text-color: #1f314f;
+  --subtitle-color: #68778d;
+  --attribution-bg: #f1f1f1;
+  --link-color: #007bff;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d5e1ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 250px;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.card-title {
+  color: var(--text-color);
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  color: var(--subtitle-color);
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.attribution {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--attribution-bg);
+  border-radius: var(--border-radius);
+  font-size: 0.7rem;
+  color: var(--subtitle-color);
+}
+
+.attribution a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
